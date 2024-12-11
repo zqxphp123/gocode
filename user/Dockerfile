@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:latest
 
 RUN mkdir /go && cd /go \
     && wget --no-check-certificate https://golang.google.cn/dl/go1.23.4.linux-arm64.tar.gz \
