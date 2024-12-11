@@ -1,1 +1,1 @@
-# 1111gocode
+#gocode-go-zero
