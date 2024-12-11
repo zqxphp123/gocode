@@ -2,8 +2,6 @@ package logic
 
 import (
 	"context"
-	"user/rpc/userclient"
-
 	"user/api/internal/svc"
 	"user/api/internal/types"
 
@@ -26,14 +24,14 @@ func NewUserinfoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *Userinfo
 
 func (l *UserinfoLogic) Userinfo(req *types.UserReq) (resp *types.UserResp, err error) {
 	// todo: add your logic here and delete this line
-	getuserResp, err := l.svcCtx.User.GetUser(l.ctx, &userclient.UserRequest{
-		Name: req.Name,
-	})
-	if err != nil {
-		return nil, err
-	}
+	//getuserResp, err := l.svcCtx.User.GetUser(l.ctx, &userclient.UserRequest{
+	//	Name: req.Name,
+	//})
+	//if err != nil {
+	//	return nil, err
+	//}
 	resp = &types.UserResp{
-		Data: getuserResp.Data,
+		Data: "ceshi",
 	}
 	return resp, nil
 
