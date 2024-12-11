@@ -7,4 +7,4 @@ RUN mkdir /go && cd /go \
     && ln -s /lib/libc.musl-x86_64.so.1  /ib64/ld-linux-x86-64.s0.2 \
 ENV GOPATH /go
 ENV PATH /usr/local/go/bin:$G0PATH/bin:$PATH
-CMD["ping" ,"baidu.com"]
+CMD ["ping" ,"baidu.com"]
